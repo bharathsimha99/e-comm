@@ -17,12 +17,12 @@ const ShopContextProvider = (props) => {
     const [all_product, setAll_Product] = useState([])
 
     useEffect(() => {
-        fetch('   https://e-commerce-pi-gules-99.vercel.app/allproducts')
+        fetch('  https://e-comm-wheat-five.vercel.app/allproducts')
             .then((resp) => resp.json())
             .then((data) => setAll_Product(data))
 
             if(localStorage.getItem('auth-token')){
-                fetch('   https://e-commerce-pi-gules-99.vercel.app/getcart',{
+                fetch('  https://e-comm-wheat-five.vercel.app/getcart',{
                     method:'POST',
                     headers:{
                         Accept:'application/form-data',
@@ -43,7 +43,7 @@ const ShopContextProvider = (props) => {
     const addToCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
         if(localStorage.getItem('auth-token')){
-            fetch('   https://e-commerce-pi-gules-99.vercel.app/addtocart',{
+            fetch('  https://e-comm-wheat-five.vercel.app/addtocart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -60,7 +60,7 @@ const ShopContextProvider = (props) => {
     const removeFromCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
         if(localStorage.getItem('auth-token')){
-            fetch('   https://e-commerce-pi-gules-99.vercel.app/removefromcart',{
+            fetch('  https://e-comm-wheat-five.vercel.app/removefromcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',

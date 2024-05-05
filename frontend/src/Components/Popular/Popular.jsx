@@ -5,7 +5,7 @@ import Item from '../Item/Item'
 const Popular = () => {
   const [popularProducts, setPopularProducts] = useState([])
   useEffect(() => {
-    fetch('   https://e-commerce-pi-gules-99.vercel.app/popularinwomen')
+    fetch('  https://e-comm-wheat-five.vercel.app/popularinwomen')
       .then((resp) => resp.json())
       .then((data) => setPopularProducts(data))
   }, [])

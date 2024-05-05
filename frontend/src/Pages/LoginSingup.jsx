@@ -17,7 +17,7 @@ const LoginSingup = () => {
   const login =async()=>{
     console.log("Login function excuted" ,formData)
     let responseData;
-    await fetch('   https://e-commerce-pi-gules-99.vercel.app/login',{
+    await fetch('  https://e-comm-wheat-five.vercel.app/login',{
       method:'POST',
       headers:{
         Accept:'application/json',
@@ -39,7 +39,7 @@ const LoginSingup = () => {
   const signup=async()=>{
     console.log("signup function excuted",formData)
     let responseData;
-    await fetch('   https://e-commerce-pi-gules-99.vercel.app/signup',{
+    await fetch('  https://e-comm-wheat-five.vercel.app/signup',{
       method:'POST',
       headers:{
         Accept:'application/json',
