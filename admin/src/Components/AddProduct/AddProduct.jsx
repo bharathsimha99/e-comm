@@ -28,7 +28,7 @@ const AddProduct = () => {
         let formData = new FormData()
         formData.append('product', image)
 //   https://e-commerce-pi-gules-99.vercel.app
-        await fetch('   https://e-commerce-pi-gules-99.vercel.app/upload', {
+        await fetch('https://e-comm-wheat-five.vercel.app/upload', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -42,7 +42,7 @@ const AddProduct = () => {
         if (responseData.success) {
             product.image = responseData.image_url;
             console.log(product)
-            await fetch('   https://e-commerce-pi-gules-99.vercel.app/addproduct', {
+            await fetch('  https://e-comm-wheat-five.vercel.app/addproduct', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
